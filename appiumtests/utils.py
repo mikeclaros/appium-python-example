@@ -5,7 +5,7 @@ from dotenv import dotenv_values
 config = dotenv_values(".env")
 capabs_preset = dict(
     platformName=config["PLATFORM_NAME"],
-    automationName=config["AUTOMATION_NAME"],
+    automationName="UIAutomator2",
     platformVersion=config["PLATFORM_VERSION"],
     deviceName=config["DEVICE_NAME"],
     appPackage='com.google.android.calculator',
